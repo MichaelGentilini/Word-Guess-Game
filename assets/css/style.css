@@ -1,0 +1,64 @@
+img {
+
+  height: 340px;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Baloo Chettan', cursive;
+  padding: 1em;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 100px;
+  /* padding-top: .25em; */
+  color: #5edb4b;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 60px;
+
+  color: #ed50b3;
+}
+
+.big {
+  /* background-color: blue; */
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  text-align: center;
+}
+
+#word-img {
+  padding: 4em 0;
+  border: lightgrey inset;
+  border-width: .5em;
+}
+
+#get-started,
+#get-wins,
+#word-guess,
+#letters-left,
+#letters-used,
+#comp-guess {
+  padding: 3em 0;
+  border: grey inset;
+  font-family: 'Corben', cursive;
+  font-size: 18px;
+  font-weight: 900;
+  border: lightgrey outset;
+  border-width: .5em;
+}
+
+#letters-used {
+  color: #ed6d50;
+
+}
