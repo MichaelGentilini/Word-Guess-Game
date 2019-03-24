@@ -14,7 +14,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Baloo Chettan', cursive;
-  font-size: 100px;
+  font-size: 60px;
   /* padding-top: .25em; */
   color: #5edb4b;
 }
@@ -22,7 +22,7 @@ h2 {
 h3 {
   text-align: center;
   font-family: 'Baloo Chettan', cursive;
-  font-size: 60px;
+  font-size: 40px;
 
   color: #ed50b3;
 }
@@ -47,6 +47,7 @@ h3 {
 #get-wins,
 #word-guess,
 #letters-left,
+#letters-right,
 #letters-used,
 #comp-guess {
   padding: 3em 0;

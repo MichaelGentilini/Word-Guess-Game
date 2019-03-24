@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Title</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var animalList = [
+      "panda",
+      "giraffe",
+      "octopus",
+      "platypus",
+      "hellbender",
+      "tiger",
+      "puppy",
+      "orangutan",
+      "turtle",
+      "salamander",
+      "ape",
+      "otter",
+      "beaver",
+      "koala",
+      "kangaroo",
+      "hippopotamus"
+    ];
+
+    var randWord = animalList[Math.floor(Math.random() * animalList.length)];
+    console.log(randWord);
+    var answerArray = [];
+    for (var i = 0; i < randWord.length; i++) {
+      answerArray[i] = "-";
+    }
+    // remaining letter variable
+    var remainingLetters = randWord.length;
+
+    ////                **** The Main Game ****
+
+
+    //while letters rre available to be guessed  
+
+    while (remainingLetters > 0) {
+      // show player progress
+      alert(answerArray.join(" "));
+
+      //get guess from player prompt
+      var guess = prompt("Pick any letter on the keyboard");
+
+      // if guess is blank
+      if (guess === null) {
+        // exit game loop
+        break;
+        // if guess is more than 1 letter or no letters          
+
+      } else if (guess.length !== 1) {
+        // alert to guess a single letter only
+
+        alert("Please one letter only!");
+        // valid guess
+      } else {
+        //update game state
+        for (var j = 0; j < randWord.length; j++) {
+          // if letter guesssed is in word at that point or index
+          if (randWord[j] === guess) {
+            // update array with guesssed letter at that point
+            answerArray[j] = guess;
+            // subtract 1 from remaining letter
+            remainingLetters--;
+          }
+
+        }
+
+      }
+      //*******************End of Game**************
+    }
+
+    //let player know the word that was the secret word
+    alert(answerArray.join(" "));
+    ///contratulate the winner
+
+    alert("Good Job, the answer was " + randWord);
+  </script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

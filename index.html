@@ -16,11 +16,11 @@
   <h1>this would be a good place to have a border</h1>
   <div class="container">
 
-    <div class="card" style="width: 90%" ;>
-      <img class="card-img-top" src="https://i.ytimg.com/vi/tzYAjYJX2ns/maxresdefault.jpg" alt="Card image cap">
+    <div class="card" style="width: 80%" ;>
+      <img class="card-img-top" src="https://i.ytimg.com/vi/ZC_3ubS3ErQ/maxresdefault.jpg" alt="Card image cap">
       <div class="card-body">
         <h2 class="card-title">Hangman</h2>
-        <h3>The One Hit Wonders Edition</h3>
+        <h3>Funny Animals Edition</h3>
       </div>
 
       <div class="container">
@@ -30,12 +30,6 @@
               , "height: 70%" ; alt="">
           </div>
           <div class="col-6 col-md-6">
-            <div class="row">
-              <div class="col-12" id="comp-guess">
-                Computer Guess
-                <div id="guess">Nothing yet</div>
-              </div>
-            </div>
             <div class="row">
               <div class="col-12" id="get-started">
                 PRESS ANY KEY TO GET STARTED
@@ -52,18 +46,32 @@
             <div class=" row">
               <div class="col-12" id="word-guess">
                 Current Word
-                <div id="current word">
+                <div id="currentword">
                   - </div>
               </div>
             </div>
             <div class="row">
               <div class="col-12" id="letters-left">
                 Number of guesses Remaining
+                <div id="remaining">
+                  -
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12" id="letters-used">
+              <div class="col-12" id="letters-right" style="color:blue">
+                Letters Guessed Correctly
+                <div id="right">
+                  -
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" id="letters-used" style="color:red">
                 Letters Already Used
+                <div id="used">
+                  -
+                </div>
               </div>
             </div>
           </div>
@@ -75,5 +83,3 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
-</html>
